@@ -1,0 +1,22 @@
+.number {
+    display: inline-block;
+    width: 2em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0.25em;
+    margin-right: 0.5em;
+    font-size: 1.2em;
+}
+
+#countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+p {
+    margin: 0 1em;
+    font-size: 1.2em;
+}

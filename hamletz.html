@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamlet's Monologue</title>
+    <style>
+        #monologue, #shakespeare {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<div id="monologue"></div>
+<div id="shakespeare"></div>
+<script>
+    const monologue = "To be, or not to be, that is the question...";
+    const shakespeare = "William Shakespeare from Hamlet";
+    let i = 0;
+
+    function displayLetter() {
+        document.getElementById("monologue").innerHTML += monologue.charAt(i);
+        i++;
+        if (i < monologue.length) {
+            setTimeout(displayLetter, Math.floor(Math.random() * 100) + 200);
+        } else {
+            document.getElementById("shakespeare").innerHTML = shakespeare;
+        }
+    }
+
+    displayLetter();
+</script>
+</body>
+</html>
